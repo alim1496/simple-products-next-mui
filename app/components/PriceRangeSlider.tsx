@@ -25,7 +25,7 @@ const PriceRangeSlider: FC<{ min: number; max: number }> = ({ min, max }) => {
             alignItems: "center",
           }}
         >
-          <Typography>${min}</Typography>
+          <Typography>${value[0]}</Typography>
           <Slider
             value={value}
             onChange={handleChange}
@@ -35,7 +35,7 @@ const PriceRangeSlider: FC<{ min: number; max: number }> = ({ min, max }) => {
             aria-labelledby="range-slider"
             sx={{ width: "80%", marginX: "10px" }}
           />
-          <Typography>${max}</Typography>
+          <Typography>${value[1]}</Typography>
         </Box>
       </Box>
     </Grid>

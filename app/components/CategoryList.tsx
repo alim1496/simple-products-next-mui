@@ -20,7 +20,7 @@ const CategoryList: FC = () => {
   const handleChange = (event: SelectChangeEvent<string>) => {
     const selected = event.target.value as string;
     setSelectedItem(selected);
-    dispatch({ type: "UPDATE_BY_CATEGORY", payload: selected });
+    dispatch({ type: "FILTER_CATEGORY", payload: selected });
   };
 
   return (

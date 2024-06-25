@@ -10,11 +10,12 @@ const SearchBox: FC = () => {
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value);
-    dispatch({ type: "FILTER_PRODUCTS", payload: event.target.value });
+    dispatch({ type: "FILTER_SEARCH", payload: event.target.value });
   };
 
   const clearSearch = () => {
     setSearchTerm("");
+    dispatch({ type: "FILTER_SEARCH", payload: "" });
   };
 
   return (

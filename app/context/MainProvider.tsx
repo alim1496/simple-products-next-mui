@@ -11,8 +11,14 @@ const MainContextProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const initialState = {
     products: [],
     displayProducts: [],
-    loading: false,
+    loading: true,
     categories: [],
+    filters: {
+      category: "",
+      search: "",
+      sort: "asc",
+      priceRange: [0, 1000],
+    },
   };
 
   const [state, dispatch] = useReducer<Reducer<State, Action>>(

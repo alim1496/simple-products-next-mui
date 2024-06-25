@@ -5,10 +5,6 @@ const CONSTANTS = {
   TERTIARY_COLOR: "#F5F5F5",
   SORT_OPTIONS: [
     {
-      sortValue: "def",
-      sortLabel: "Default",
-    },
-    {
       sortValue: "asc",
       sortLabel: "Price (Low > High)",
     },

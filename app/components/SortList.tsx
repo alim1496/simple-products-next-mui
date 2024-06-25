@@ -18,7 +18,7 @@ const SortList: FC<{ sortItems: SortProps[] }> = ({ sortItems }) => {
   const handleChange = (event: SelectChangeEvent<string>) => {
     const selected = event.target.value as string;
     setSelectedItem(selected);
-    dispatch({ type: "SORT_PRODUCTS", payload: selected });
+    dispatch({ type: "SORT_PRICE", payload: selected });
   };
 
   return (
