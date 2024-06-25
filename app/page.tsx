@@ -5,7 +5,6 @@ import ProductList from "./components/ProductList";
 import { ChangeEvent, useContext, useState } from "react";
 import MainContext from "./context/MainContext";
 import { MainContextProps } from "./models/MainTypes";
-import CategoryList from "./components/CategoryList";
 import TopBar from "./components/TopBar";
 import Navbar from "./components/Navbar";
 
