@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description:
     "A place for different products as per your need with a lot of variations",
   authors: [{ name: "M A Alim", url: "https://alim1496.github.io/" }],
-  // metadataBase: new URL("https://alim-blog.vercel.app/"),
+  metadataBase: new URL("https://shopify-five-green.vercel.app/"),
   openGraph: {
     title: "Shopify",
     description:
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "shopify",
-    // url: "https://alim-blog.vercel.app/",
+    url: "https://shopify-five-green.vercel.app/",
     images: ["/main-og.png"],
   },
   twitter: {

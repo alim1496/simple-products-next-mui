@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import { CircularProgress, Container, Box, Pagination } from "@mui/material";
 import ProductList from "./components/ProductList";
 import { ChangeEvent, useContext, useState } from "react";
+import Image from "next/image";
 import MainContext from "./context/MainContext";
 import { MainContextProps } from "./models/MainTypes";
 import TopBar from "./components/TopBar";
@@ -44,6 +45,18 @@ export default function Home() {
           </Box>
         ) : (
           <ProductList products={currentProducts} />
+        )}
+        {!loading && displayProducts.length === 0 && (
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              height: "70vh",
+            }}
+          >
+            <Image src="/empty.png" alt="Empty" width={500} height={500} />
+          </Box>
         )}
         <Box
           sx={{ mt: "auto", py: 4, display: "flex", justifyContent: "center" }}
